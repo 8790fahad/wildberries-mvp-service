@@ -2,7 +2,7 @@ import { GoogleSpreadsheet } from "google-spreadsheet";
 import { JWT } from "google-auth-library";
 
 const SERVICE_ACCOUNT_EMAIL = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL!;
-const PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY!.replace(/\\n/g, "\n");
+const PRIVATE_KEY = process.env.GOOGLE_PRIVATE_KEY!;
 
 const auth = new JWT({
   email: SERVICE_ACCOUNT_EMAIL,
